@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminFunctions.AdminHomeActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcom_message"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="Welcom Admin what do you like to do"
+        android:layout_marginTop="10dp"/>
+<Button
+    android:layout_below="@id/welcom_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="View New Orders"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@android:color/holo_red_dark"
+    android:textColor="@android:color/white"
+    android:id="@+id/new_order"
+    android:textSize="20dp"/>
+    <Button
+        android:layout_below="@id/new_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Approved new products"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:id="@+id/approved_products"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:id="@+id/logout"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

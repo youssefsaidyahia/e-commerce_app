@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ord_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_orderAct"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/n_o"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="order"
+        app:layout_constraintBottom_toTopOf="@+id/ba_1"
+        app:layout_constraintStart_toStartOf="@+id/ba_1"
+        app:layout_constraintTop_toBottomOf="@+id/m1" />
+
+    <EditText
+        android:id="@+id/orde_date"
+        android:layout_width="309dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="OrderData"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Address"
+        android:layout_width="297dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/m1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orde_date" />
+
+    <Button
+        android:id="@+id/ba_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/n_o" />
+
+    <Button
+        android:id="@+id/m1"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="show map"
+        app:layout_constraintBottom_toTopOf="@+id/n_o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Address" />
+
+</android.support.constraint.ConstraintLayout>

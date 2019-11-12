@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="15dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/clientname"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/clientPhone"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/orderSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price"
+            android:textSize="20sp"
+            android:layout_below="@id/clientname"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/orderSalary"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Address"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/purc_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Purchase Type"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Date"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="card Number"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/purc_type"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/card_date"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="card date"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/purc_type"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"/>
+        <TextView
+            android:id="@+id/cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cvv"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/card_date"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/viewProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="viewProducts"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/cvv"
+            android:gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

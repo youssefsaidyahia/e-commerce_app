@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".seller.Categorylist">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cateegories"
+    android:textColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/books"
+            android:id="@+id/books"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/hats"
+            android:id="@+id/hats"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sports"
+            android:id="@+id/sports"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/laptops"
+            android:id="@+id/laptops"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/sweather"
+            android:id="@+id/sweather"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/tshirts"
+            android:id="@+id/tshirts"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/shoess"
+            android:id="@+id/shoess"/>
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/watches"
+            android:id="@+id/watches"/>
+    </LinearLayout>
+</LinearLayout>

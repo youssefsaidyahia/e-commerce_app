@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.android.project_mc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        tools:ignore="ExtraText">
+        <activity
+            android:name=".Welcom_Page"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".buyer.Sign_upAcivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".seller.Categorylist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buyer.Prod_Details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".seller.addproduct"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buyer.byerHomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buyer.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".buyer.CartActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buyer.Confirmed_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminFunctions.viewOrdersActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminFunctions.AdminViewProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buyer.searchText"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".seller.sellerMaintainProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buyer.resetPassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".buyer.changepassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".purchase.credit_card_payment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".purchase.Purchase_methods"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminFunctions.SendingMail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".seller.Seller_register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".seller.seller_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".seller.SellerHomeActivity"
+            android:label="@string/title_activity_selle4r_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminFunctions.AdminHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminFunctions.AdminApprovedProductsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".buyer.Login_activity">
+            android:theme="@style/AppTheme.NoActionBar"
+        </activity>
+        <activity android:name=".buyer.searchVoice" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <activity
+            android:name=".buyer.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".buyer.SearchActivity"></activity>
+    </application>
+
+</manifest>
